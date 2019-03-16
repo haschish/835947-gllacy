@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>Gllacy Shop</title>
 </head>
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css">
 <body>
     <header class="main-header">
         <nav class="main-navigation">
@@ -15,10 +18,10 @@
                     <a href="#">Каталог</a>
                     <ul class="sub-menu">
                       <li><a href="#">Новинки</a></li>
-                      <li class="sub-menu__item"><a href="catalog.html">Сливочное</a></li>
-                      <li class="sub-menu__item"><a href="#">Щербеты</a></li>
-                      <li class="sub-menu__item"><a href="#">Фруктовый лед</a></li>
-                      <li class="sub-menu__item"><a href="#">Мелорин</a></li>
+                      <li class="sub-menu-item"><a href="catalog.html">Сливочное</a></li>
+                      <li class="sub-menu-item"><a href="#">Щербеты</a></li>
+                      <li class="sub-menu-item"><a href="#">Фруктовый лед</a></li>
+                      <li class="sub-menu-item"><a href="#">Мелорин</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Доставка и оплата</a></li>
@@ -30,7 +33,7 @@
                 <li class="basket">Корзина</li>
             </ul>
         </nav>
-        <p>
+        <p class="work-time">
             <small>С 10 до 20, ежедневно</small><br>
             <a href="tel:+78124502525">8 812 450-25-25</a>
         </p>
@@ -38,19 +41,20 @@
     <main class="conteiner">
         <h1 class="visually-hidden">Gllacy Shop</h1>
         <section class="stock">
-            <p>
+            <div class="stock-item-1">
             <h2>Малинка даром!</h2>
-            При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
-            <button>Хочу варенье!</button>
-            </p>
-            <p>
+            <p class="stock-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+            <button class="button">Хочу варенье!</button>
+            </div>
+            <div class="stock-item-2">
             <h2>Шоколадки даром!</h2>
-            При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
-            <button>Хочу шоколадки!</button>
-            </p>
+            <p class="stock-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+            <button class="button">Хочу шоколадки!</button>
+            </div>
         </section>
         <ul class="hits">
-            <li class="hits-item">
+            <li class="hits-item-1">
+              <div class="hits-icecream-1"></div>
               <h3>
               <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
               </h3>
@@ -58,14 +62,18 @@
                   310₽<span>/кг</span>
               </p>
             </li>
-            <li class="hits-item">
+            <li class="hits-item-2">
+              <div class="hits-icecream-2">
+              </div>
               <h3>
                 <a href="#">Сливочно-кофейное с кусочками шоколада</a>
               </h3>
               <p class="hits-item-price">
                 380₽<span>/кг</span>
               </p>
-            <li class="hits-item">
+            <li class="hits-item-3">
+              <div class="hits-icecream-3">
+              </div>
               <h3>
                 <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
               </h3>
@@ -73,7 +81,9 @@
                 355₽<span>/кг</span>
               </p>
             </li>
-            <li class="hist-item">
+            <li class="hist-item-4">
+              <div class="hits-icecream-4">
+              </div>
               <h3>
                 <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
               </h3>
@@ -87,20 +97,20 @@
                 производства на развес
             </h2>
             <ul class="information-list">
-                <li class="information-item">
+                <li class="information-item-1">
                     <p>Все наше мороженое изготавливается на собственном
                     производстве, с использование современного оборудования и проверенных временем технологий.
                     </p>
                 </li>
-                <li class="information-item">
+                <li class="information-item-2">
                     <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья
                     </p>
                 </li>
-                <li class="information-item">
+                <li class="information-item-3">
                     <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
                     </p>
                 </li>
-                <li class="information-item">
+                <li class="information-item-4">
                     <p>Доставка мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
                     </p>
                 </li>
@@ -115,6 +125,8 @@
             <p>
               Подпишитесь на нашу сладкую рассылку и бедете всегда в курсе всего самого вкусного, что у нас происходит. Обещаю не спамить и не слать всякой ненужной ерунды. Честно=)
               <label class="visully-hidden" for="follow-email">Электронная Почта</label>
+            </p>
+            <p>
               <input class="follow-icon-email" id="follow-email" type="email" name="email" placeholder="Электронная Почта">
             </p>
             <button class="button" type="submit">Отправить</button>
@@ -122,7 +134,7 @@
         <section class="map">
             <img src="img/maps.png" height="430" width="1200" alt="Санкт-Петербург ул. Большая Конюшенная 19/8">
             <img src="img/pin.svg" height="140" width="80" alt="Курсор">
-            <section>
+            <section class="address-shop">
               <small class="address">Адрес главного офиса и онлайн-магазина</small>
               <p class="address">
                 Ул. Большая Конюшенная 19/8, Санкт-Петербург
@@ -151,9 +163,9 @@
                 <li><a class="about-link" href="#"> Экологические стандарты</a></li>
             </ul>
         </div>
-        <p>
-            <img src="img/logo-htmlacademy.svg"  heigth="39" width="108" alt="Логотип HTML Academy">
-            Сделано в <a class="button" href="https://htmlacademy.ru">HTML Academy</a> © 2017
+        <p class="htmlacademy">
+            <img src="img/logo-htmlacademy.svg" heigth="39" width="108" alt="Логотип HTML Academy"><br>
+            Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2017
         </p>
     </footer>
     <section class="modal modal-login">

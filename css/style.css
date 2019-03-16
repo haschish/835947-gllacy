@@ -1,0 +1,232 @@
+body{
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+.button{
+  font: inherit;
+
+  text-align: center;
+  color: #fefefe;
+  vertical-align: middle;
+
+  background-color: #f16542;
+  border: none;
+}
+.button:hover,
+.button:focus,
+.button:active{
+  background-color: #f17d65;
+}
+.main-navigation{
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+.user-navigation{
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+.site-navigation,
+.user-navigation,
+.sub-menu{
+  list-style: none;
+  color: #ffffff;
+}
+.site-navigation a,
+.user-navigation a,
+.sub-menu a{
+  color: #ffffff;
+}
+.work-time{
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: bold;
+
+  background-color: #849d8f;
+}
+.work-time a{
+  color: #ffffff;
+}
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus{
+  background-color: #ededed;
+}
+.sub-menu a:hover,
+.sub-menu a:focus{
+  background-color: #fbded7
+}
+.stock h2{
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+}
+.stock-text{
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+}
+.stock-item-1{
+  background-image: url("../img/respberries.jpg");
+  background-repeat: no-repeat;
+
+  background-color: #9f2341;
+
+  width: 560px;
+  height: 229px;
+}
+.stock-item-2{
+  background-image: url("../img/chocolate.jpg");
+  background-repeat: no-repeat;
+
+  background-color: #44291d;
+
+  width: 560px;
+  height: 229px;
+}
+.hits{
+  list-style: none;
+}
+.hits a{
+  color: #ffffff;
+}
+.hits-icecream-1{
+  background-image: url("../img/ice1.jpg");
+  background-repeat: no-repeat;
+
+  background-color: #f1b97e;
+
+  width: 267px;
+  height: 267px;
+}
+.hits-icecream-2{
+  background-image: url("../img/ice2.jpg");
+  background-repeat: no-repeat;
+
+  background-color: #b16344;
+
+  width: 267px;
+  height: 267px;
+}
+.hits-icecream-3{
+  background-image: url("../img/ice3.jpg");
+  background-repeat: no-repeat;
+
+  background-color: #f37e9d;
+
+  width: 267px;
+  height: 267px;
+}
+.hits-icecream-4{
+  background-image: url("../img/ice4.jpg");
+  background-repeat: no-repeat;
+
+  background-color: #cb914d;
+
+  width: 267px;
+  height: 267px;
+}
+/* .hit-icon{
+  background-image: url("../img/hit.svg");
+  background-repeat: no-repeat;
+} */
+.information{
+  color: #323232;
+
+  background-image: url("../img/wafer.jpg");
+  background-repeat: no-repeat;
+
+  background-color: #eaddc1;
+
+  width: 734px;
+  height: 433px;
+}
+.information-list{
+  list-style: none;
+}
+.information-item-1{
+  background-image: url("../img/icecream.svg");
+  background-repeat: no-repeat;
+
+}
+.information-item-2{
+  background-image: url("../img/leaf.svg");
+  background-repeat: no-repeat;
+
+}
+.information-item-3{
+  background-image: url("../img/cow.svg");
+  background-repeat: no-repeat;
+
+}
+.information-item-4{
+  background-image: url("../img/thermometr.svg");
+  background-repeat: no-repeat;
+}
+.blog{
+  color: #323232;
+
+  background-image: url("../img/blog.jpg");
+  background-repeat: no-repeat;
+
+  background-color: #ffffff;
+
+  width: 560px;
+  height: 220px;
+
+}
+.blog h2{
+  font-size: 16px;
+  line-height: 22px;
+}
+.blog a{
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #323232;
+}
+.address-shop{
+  color: #323232;
+
+  background-color: #fffffe;
+
+  width: 302px;
+  height: 305px;
+}
+.footer-social ul{
+  list-style: none;
+}
+.footer-about ul{
+  list-style: none;
+}
+.footer-about a{
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: bold;
+
+}
+.htmlacademy{
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+}
+.htmlacademy a{
+  color: #ffffff;
+}
