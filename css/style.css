@@ -113,6 +113,10 @@ body{
 
   background-color: #849d8f;
 }
+.work-time small{
+  font-size: 14px;
+  line-height: 16px;
+}
 .work-time a{
   flex-wrap: wrap;
 
