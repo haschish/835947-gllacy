@@ -1,6 +1,7 @@
 body{
   margin: 0;
   padding: 0;
+  padding-top: 10px;
 
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -53,18 +54,27 @@ body{
   background-color: #849d8f;
 }
 .site-navigation{
-  width: 685px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 400px;
   margin: 0;
   padding: 0;
+  margin-top: 25px;
 }
 .main-navigation-wrapper{
   width: 100%;
   margin-bottom: 20px;
 }
 .user-navigation{
-  width: 265px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 245px;
   margin: 0;
   padding: 0;
+  margin-left: auto;
+  margin-top: 25px;
 
   font-size: 14px;
   line-height: 16px;
@@ -93,13 +103,13 @@ body{
 }
 .work-time{
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-
+  flex-direction: column;
+  align-items: flex-end;
 
   font-size: 22px;
   line-height: 24px;
   font-weight: bold;
+  text-align: left;
 
   background-color: #849d8f;
 }
