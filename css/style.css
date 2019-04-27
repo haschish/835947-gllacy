@@ -81,7 +81,7 @@ input[type="radio"].visually-hidden{
   display: flex;
   justify-content: space-between;
   width: 350px;
-  height: max-content;
+  min-height: max-content;
   margin: 0;
   padding: 0;
   margin-top: 25px;
@@ -92,17 +92,12 @@ input[type="radio"].visually-hidden{
 
   padding: 0;
 }
-.main-navigation-wrapper{
-  width: 100%;
-  margin-bottom: 20px;
-}
+
 .user-navigation{
-  /* background: rgba(234, 255, 45, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(234, 255, 45); */
 
   display: flex;
   justify-content: space-between;
-  width: 245px;
+  width: 250px;
   height: max-content;
   margin: 0;
   padding: 0;
@@ -116,15 +111,13 @@ input[type="radio"].visually-hidden{
 
   background-color: #849d8f;
 }
-.main-navigation-wrapper{
-  display: flex;
-  justify-content: space-between;
-}
 .site-navigation,
 .user-navigation,
 .sub-menu{
   list-style: none;
   color: #ffffff;
+
+
 }
 .site-navigation a,
 .user-navigation a,
@@ -132,7 +125,6 @@ input[type="radio"].visually-hidden{
   color: #ffffff;
   text-decoration: none;
   border-bottom: #9db1a5 solid 1px;
-
 }
 .work-time{
   display: flex;
@@ -163,14 +155,24 @@ input[type="radio"].visually-hidden{
   background-color: #ededed;
   color: #323232;
 }
+.site-navigation a:hover,
+.site-navigation a:focus{
+  padding:0;
+  padding: 7px 13px 7px 15px;
+
+  border-radius: 15px;
+}
 .sub-menu a:hover,
 .sub-menu a:focus{
-  background-color: #fbded7
+  background-color: #fbded7;
+  padding: 0;
+  border-radius: 0;
 }
+
 .search a{
   display: block;
   width: 35px;
-  height: 33px;
+  min-height: 33px;
 
   background-color: #9db1a5;
   border-radius: 35px;
@@ -190,7 +192,7 @@ input[type="radio"].visually-hidden{
 .login-link a{
   display: block;
   width: 30px;
-  height: 16px;
+  min-height: 16px;
 
   background-color: #9db1a5;
   border-radius: 35px;
@@ -203,7 +205,7 @@ input[type="radio"].visually-hidden{
   left: 16px;
 
   width: 20px;
-  height: 20px;
+  min-height: 20px;
   background-image: url("../img/login.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -216,7 +218,7 @@ input[type="radio"].visually-hidden{
 .basket a{
   display: block;
   width: 40px;
-  height: 16px;
+  min-height: 16px;
 
   background-color: #9db1a5;
   border-radius: 35px;
@@ -234,6 +236,21 @@ input[type="radio"].visually-hidden{
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+/* .basket:hover::before, */
+/* .basket:focus::before, */
+/* .basket:active::before{
+  content: "";
+
+  position: absolute;
+  top: 6px;
+  left: 16px;
+
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/basket-active.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+} */
 /* main */
 .stock{
   display: flex;
@@ -258,9 +275,21 @@ input[type="radio"].visually-hidden{
   padding-left: 20px;
   padding-right: 25px;
 }
-.stock .button{
+.stock-item-1 .button{
   float: right;
   margin-right: 20px;
+  padding: 0;
+  padding: 10px 25px 10px 20px;
+
+  border-radius: 25px;
+}
+.stock-item-2 .button{
+  float: right;
+  margin-right: 20px;
+  padding: 0;
+  padding: 10px 20px 10px 25px;
+
+  border-radius: 25px;
 }
 .stock-item-1{
   background-image: url("../img/respberries.jpg");
@@ -322,6 +351,7 @@ a.hits-item-image{
   width: 1126px;
   min-height: 310px;
   margin:0 ;
+  padding: 0;
   margin-top: 40px;
   padding-top: 30px;
   padding-left: 20px;
@@ -332,45 +362,109 @@ a.hits-item-image{
 }
 .information-list{
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   list-style: none;
-  width: 1105px;
-  height: 195px;
-  position: relative;
+  min-width: 1105px;
+
+
+
+  padding: 0;
 
 }
 .information-item-1{
+  display: block;
+  width: 475px;
+  padding-left:60px;
+
+  position: relative;
+
+  order:0;
+}
+.information-item-1::before{
+  content: "";
+
+  position: absolute;
+  top: 5px;
+  left: 5px;
+
+  width: 50px;
+  min-height: 50px;
   background-image: url("../img/icecream.svg");
   background-repeat: no-repeat;
+  background-position: 0 0;
 
-  width: 545px;
-  height: 80px;
+
 }
-
 .information-item-2{
+  display: block;
+  width: 475px;
+  padding-left:60px;
+
+  position: relative;
+
+  order: 2;
+}
+.information-item-2::before{
+  content: "";
+
+  position: absolute;
+  top: 5px;
+  left: 5px;
+
+  width: 50px;
+  min-height: 50px;
   background-image: url("../img/leaf.svg");
   background-repeat: no-repeat;
+  background-position: 0 0;
 
-  width: 545px;
-  height: 80px;
-  margin-top: 30px;
 
 }
 .information-item-3{
+  display: block;
+  width: 475px;
+  padding-left: 85px;
+
+  position: relative;
+
+  order: 1;
+}
+.information-item-3::before{
+  content: "";
+
+  position: absolute;
+  top: 5px;
+  left: 25px;
+
+  width: 50px;
+  min-height: 50px;
   background-image: url("../img/cow.svg");
   background-repeat: no-repeat;
+  background-position: 0 0;
 
-  width: 545px;
-  height: 80px;
+
 }
 .information-item-4{
+  display: block;
+  width: 475px;
+  padding-left: 85px;
+
+  position: relative;
+  order:3;
+}
+.information-item-4::before{
+  content: "";
+
+  position: absolute;
+  top: 5px;
+  left: 25px;
+
+  width: 50px;
+  min-height: 50px;
   background-image: url("../img/thermometr.svg");
   background-repeat: no-repeat;
+  background-position: 0 0;
 
-  width: 545px;
-  height: 80px;
-  margin-top: 30px;
+
 }
 .social-list{
   display: flex;
@@ -389,15 +483,15 @@ a.hits-item-image{
   border-radius: 15px;
 
   width: 540px;
-  height: 190px;
-
+  min-height: 220px;
   padding-left: 20px;
 }
 .blog h2{
   font-size: 16px;
   line-height: 22px;
   margin: 0;
-  margin-top:30px;
+  margin-top:20px;
+
 }
 .blog a{
   font-size: 24px;
@@ -409,49 +503,73 @@ a.hits-item-image{
 }
 .link{
   width: 285px;
-  height: 90px;
 }
 .follow{
   color: #323232;
 
-  background-color: #ffffff;
+  background: repeating-linear-gradient(
+    -45deg,
+  #f8f7f4,
+  #f8f7f4 5px,
+  #92cdff 0,
+  #92cdff 10px,
+  #f8f7f4 0,
+  #f8f7f4 15px,
+  #fea497 0,
+  #fea497 20px
+  );
   border-radius: 15px;
 
-  width: 535px;
-  height: 150px;
-  padding-top: 40px;
-  padding-left: 25px;
+  width: 560px;
+  padding: 6px;
+}
+.follow-wraper{
+  background-color: #f8f7f4;
+  border-radius: 15px;
+
+  width: 560px;
+  height: 210px;
 }
 .follow-text{
   width: 510px;
-  height: 60px;
   margin: 0;
+  padding-top: 30px;
+  padding-left: 30px;
 }
 .follow-link{
   margin-top: 40px;
+  padding-left: 30px;
 }
 .map{
-
   width: 1200px;
   margin: 0 auto;
   margin-top:40px;
+
+  position: relative;
+}
+.pin{
+  position: absolute;
+  top: 140px;
+  left: 265px;
 }
 .address-shop{
   color: #323232;
   font-weight: bold;
 
-
   background-color: #fffffe;
-
+  border-radius: 20px;
 
   width: 302px;
-  height: 305px;
+  min-height: 305px;
+
+  position: absolute;
+  top: 65px;
+  left: 870px;
 }
 .address{
   text-align: left;
 
   width: 225px;
-  height: 175px;
   margin:0;
   padding-top: 35px;
   padding-left: 25px;
@@ -526,6 +644,7 @@ a.hits-item-image{
   padding-left: 20px;
 
   background-color: #f8f7f4;
+  border-radius: 10px;
 }
 .navigation-login{
   position: relative;
@@ -533,7 +652,7 @@ a.hits-item-image{
   display: flex;
   flex-direction: column;
   width:120px;
-  height: 40px;
+  min-height: 40px;
   margin-left: 100px;
   margin-top: 25px;
 
@@ -550,9 +669,10 @@ a.hits-item-image{
 }
 .modal-search{
   background-color: #f8f7f4;
+  border-radius: 5px;
 
   width: 328px;
-  height: 65px;
+  min-height: 65px;
   margin-top: 10px;
 }
 .search-line{
@@ -563,9 +683,10 @@ a.hits-item-image{
   color: #323232;
 
   background-color: #f8f7f4;
+  border-radius: 15px;
 
   width: 460px;
-  height: 425px;
+  min-height: 425px;
   padding-left: 25px;
   padding-top: 20px;
   margin-top: 10px;
@@ -580,9 +701,10 @@ a.hits-item-image{
   color: #323232;
 
   background-color: #f8f7f4;
+  border-radius: 15px;
 
   width: 540px;
-  height: 245px;
+  min-height: 245px;
   margin-top: 10px;
   padding-top: 20px;
 
@@ -639,14 +761,9 @@ a.hits-item-image{
 }
 
 /* Каталог */
-.conteiner-catalog-header{
-  display: flex;
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 27px;
-}
+
 .conteiner-catalog{
-  width: 1200px;
+  width: 1146px;
   margin: 0 auto;
   padding: 0 27px;
 }
