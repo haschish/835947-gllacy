@@ -94,7 +94,7 @@ input[type="radio"].visually-hidden{
 }
 
 .sub-menu{
-  /* visibility: hidden; */
+  visibility: hidden;
 
   position: absolute;
   top: 30px;
@@ -107,8 +107,11 @@ input[type="radio"].visually-hidden{
   font-size: 14px;
   line-height: 16px;
 
+
   background-color: #f8f7f4;
   border-radius: 10px;
+
+  box-shadow:  0 10px 20px 10px rgba(0,0,0,0.4);
 }
 
 .new-item{
@@ -118,9 +121,18 @@ input[type="radio"].visually-hidden{
 }
 .sub-menu-item{
   padding: 10px 15px;
+
+  font-weight: 400;
 }
-.sub-menu-item:nth-child(3){
+.sub-menu-item:hover{
   background-color: #fbded8;
+}
+.sub-menu-item:active{
+  background-color: #f6b5a5;
+}
+
+.catalog-sub-menu:hover .sub-menu{
+  visibility: visible;
 }
 .user-navigation{
   position: relative;
@@ -199,7 +211,7 @@ input[type="radio"].visually-hidden{
 }
 .sub-menu a:hover,
 .sub-menu a:focus{
-  background-color: #fbded7;
+  background-color: inherit;
   padding: 0;
   border-radius: 0;
 }
@@ -673,13 +685,22 @@ a.hits-item-image{
 
   width: 155px;
 }
+.address a{
+  text-decoration: none;
+  color: #323232
+}
 .address-shop .button{
-  width: 255px;
+  display: block;
+
+  width: 205px;
   margin-top: 25px;
   padding: 0;
   padding: 10px 25px 10px 20px;
 
   border-radius: 20px;
+
+  text-decoration: none;
+  color: #fefefe
 }
 .main-footer{
   display: flex;
@@ -749,6 +770,7 @@ a.hits-item-image{
 
   background-color: #f8f7f4;
   border-radius: 10px;
+  box-shadow:  0 10px 20px 10px rgba(0,0,0,0.4);
 }
 .login-icon-user{
   padding: 10px 67px 10px 16px;
@@ -786,7 +808,7 @@ a.hits-item-image{
   min-height: 45px;
   border-radius: 20px;
 }
-.login-link:hover + .modal-login{
+.login:hover  .modal-login{
   visibility: visible
 }
 .modal-search{
@@ -797,7 +819,7 @@ a.hits-item-image{
 
   background-color: #f8f7f4;
   border-radius: 5px;
-
+  box-shadow:  0 10px 20px 10px rgba(0,0,0,0.4);
 
 }
 .search-line{
@@ -812,21 +834,16 @@ a.hits-item-image{
   border-radius: 5px;
 }
 
-.search-link:hover + .modal-search{
+.search:hover .modal-search{
   visibility: visible
 }
 .modal-dialog {
 	position: fixed;
-	/* font-family: Arial, Helvetica, sans-serif; */
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: rgba(0,0,0,0.8);
-	z-index: 99999;
-	-webkit-transition: opacity 400ms ease-in;
-	-moz-transition: opacity 400ms ease-in;
-	transition: opacity 400ms ease-in;
+
 	display: none;
 	pointer-events: none;
 }
@@ -856,13 +873,23 @@ a.hits-item-image{
   min-height: 425px;
   padding-left: 25px;
   padding-top: 20px;
-  margin: 10% auto 10% auto;
+  margin: 10% auto;
+
+}
+.feedback{
+  padding: 10px 60px 10px 20px;
+
+  border: #d3d3d2 solid 1px;
+  border-radius: 5px;
 }
 .modal-feedback textarea{
   resize: none;
+  padding: 12px 235px 125px 15px;
 }
 .modal-feedback button{
- margin-left: 290px;
+  margin-left: 290px;
+  padding: 11px 22px;
+  border-radius: 25px;
 }
 .modal-basket{
   visibility: hidden;
@@ -931,7 +958,7 @@ a.hits-item-image{
   flex-wrap: wrap;
   padding-left: 355px;
 }
-.basket-link:hover + .modal-basket{
+.basket:hover  .modal-basket{
   visibility: visible
 }
 /* Каталог */
